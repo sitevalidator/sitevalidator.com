@@ -1,14 +1,18 @@
-# Middleman on Heroku
-### precompiled and served statically!!!
+# Site Validator Static Pages
 
-## Usage
+These are the static pages for Site Validator.
 
-    $ git clone http://github.com/indirect/middleman-heroku-static-app.git mysite && cd mysite
-    $ bundle install && bundle exec middleman init .
-    $ git add . && git commit -m "brand new site"
-    $ heroku create && git push heroku master
-    $ heroku open
+It's built with [middleman](https://middlemanapp.com/), a static site generator.
 
-The only expectation is that `middleman build` will generate your site into `./build`. That's where Rack::TryStatic will look.
+We use Netlify for continuous deployment and Site Validator for continuous validation, so every time we accept a pull request for this repository the pages will be automatically rebuilt, deployed to http://sitevalidator.com and validated for W3C conformance.
 
-You can customize the 404 page that's served if TryStatic can't find a file by editing `source/404.html.erb`.
+## Running locally
+
+```bash
+git clone https://github.com/sitevalidator/sitevalidator.com.git sitevalidator
+cd sitevalidator
+bundle
+middleman server
+```
+
+Now you'll be able to view the site at http://localhost:4567/
