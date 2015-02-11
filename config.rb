@@ -129,7 +129,7 @@ end
 
 page "/atom.xml", layout: false
 page "/sitemap.xml", layout: false
-page "/404"
+page "/404.html", directory_index: false
 
 activate :directory_indexes
 activate :livereload, apply_css_live: false, apply_js_live: false
