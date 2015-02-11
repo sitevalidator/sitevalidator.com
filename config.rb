@@ -129,6 +129,7 @@ end
 
 page "/atom.xml", layout: false
 page "/sitemap.xml", layout: false
+page "/404"
 
 activate :directory_indexes
 activate :livereload, apply_css_live: false, apply_js_live: false
