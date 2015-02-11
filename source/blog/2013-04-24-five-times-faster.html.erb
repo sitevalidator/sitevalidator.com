@@ -1,0 +1,7 @@
+---
+date: 2013-04-24
+title: "Five times faster!"
+tags: improvements,servers,background-queue
+---
+
+In order to accomodate the increasing number of requested validations on <a rel="nofollow" target="_blank" href="http://sitevalidator.com">Site Validator</a>, we've scaled the number of background workers to be <b>5 times bigger</b>.<br><br>Until now, we had a background queue where we processed 1 validation at a time. The number of workers was elastic, so we could automatically scale from 1 worker to 5 workers if the existing workload required more processing power.<br><br>Although this helped us to reduce the server costs while being able to scale up when needed, the solution was not optimal. It took some seconds to do this scaling, and it also made the validations slower when we only had 1 active worker.<br><br><b>Now, we've put the background queue at full throttle and the number of workers will always be set to the max</b>. There will always be 5 workers waiting for your validation requests, no matter what the workload is.<br><br>We hope this helps you in getting your site validation reports quicker!

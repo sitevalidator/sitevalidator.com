@@ -1,0 +1,12 @@
+---
+pageable: true
+per_page: 12
+layout: blog
+---
+<h1>Articles tagged '<%= tagname %>'</h1>
+
+<ul style="margin-left:30px;">
+  <% page_articles.each_with_index do |article, i| %>
+    <li style="margin-bottom: 5px;"><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+  <% end %>
+</ul>

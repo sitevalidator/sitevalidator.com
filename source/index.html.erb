@@ -1,0 +1,133 @@
+---
+home: true
+title: Site Validator
+---
+
+<div class="lead-container">
+  <div class="container">
+    <!-- Macbook carousel -->
+    <div id="carousel" class="carousel slide macbook">
+      <%= image_tag 'template/carousel-macbook.png', :class => "carousel-macbook", :alt => "" %>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+          <div class="item active">
+            <a href="//fast.wistia.net/embed/iframe/tsnw0okrs0?popover=true" class="wistia-popover[height=433,playerColor=7b796a,width=720]"><%= image_tag "video_home.jpg", alt: "Site Validator demo video" %></a>
+          </div>
+      </div>
+    </div>
+    <!-- end Macbook carousel -->
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span8">
+      <h1 class="lead">
+        <strong>Site-wide HTML &amp; CSS validation</strong>
+        <br />
+        Continuous validation for large sites with just one click.
+      </h1>
+    </div>
+    <div class="span4">
+      <%= link_to "14-day free trial<br/><small>no credit card required</small>".html_safe, "https://app.sitevalidator.com/pricing", class: "button large yellow signupfree" %>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <h2>W3C-compliant HTML and CSS validation for large sites</h2>
+      <p>Using our service you can <strong>validate HTML and CSS on thousands of pages</strong> from your sites, <strong><a href="http://docs.sitevalidator.com/site-wide-validation" target="_blank">with just one click</a></strong>. Just give us a starting URL and we'll visit it to discover its internal pages, validate each of them <strong>using the same validation software that the W3C maintains</strong>, and produce a summary and detailed report in minutes. Then, you can fix your errors and re-check as needed.</p>
+      <p style="text-align: center;">
+        <br />
+        <a href="https://app.sitevalidator.com/s/cbf35b792a90aa46958f83ca015a08cbe5f72ae9?tour=1" target="_blank" title="Click to see a sample report"><%= image_tag 'sample_report.jpg', alt: 'Sample report', class: 'screenshot' %></a>
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span12">
+      <h2>Continuous Validation</h2>
+
+      <p>
+        Site Validator easily integrates with modern hosting platforms like <a href="http://docs.sitevalidator.com/continuous-validation/#example-netlify" target="_blank">Netlify</a>, <a href="http://docs.sitevalidator.com/continuous-validation/#example-heroku" target="_blank">Heroku</a> or <a href="http://docs.sitevalidator.com/continuous-validation/#example-cloud-66" target="_blank">Cloud 66</a> via webhooks, so you can set up automatic validations on your sites after a new version is deployed.
+      </p>
+
+      <div style="text-align: center; margin: 30px;">
+        <a href="//fast.wistia.net/embed/iframe/w2xu1aedtf?popover=true" class="wistia-popover[height=433,playerColor=7b796a,width=720]"><%= image_tag "video_continuous_validation.jpg", alt: "Site Validator continuous validation demo video", class: "screenshot" %></a>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span4">
+      <h2><span class="grey">Validate</span> large sites</h2>
+      <p>Our web spider will crawl your site and validate each page to collect all their common issues, grouping them together.</p>
+      <p>You can also submit an XML sitemap to specify exactly the pages to validate. </p>
+      <p><a href="http://docs.sitevalidator.com/site-wide-validation">Read more &raquo;</a></p>
+    </div>
+
+    <div class="span4">
+      <h2><span class="grey">Continuous</span> validation</h2>
+      <p>Site validator easily integrates with modern hosting platforms to validate your site automatically after each deploy.</p>
+      <p>All you need is add a webhook to notify us of a new deploy.</p>
+      <p><a href="http://docs.sitevalidator.com/continuous-validation">Read more &raquo;</a></p>
+    </div>
+
+    <div class="span4">
+      <h2><span class="grey">Local server</span> validation</h2>
+      <p>Site Validator easily integrates with third-party tools like ngrok to validate your local web server.</p>
+      <p>You don't need to go live to be able to validate your sites. </p>
+      <p><a href="http://docs.sitevalidator.com/validating-your-local-server">Read more &raquo;</a></p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span12">
+      <p style="text-align: center;">
+        <br />
+        <a href="https://app.sitevalidator.com/pricing" class="button large yellow">See plans and pricing</a>
+      </p>
+      <p style="text-align: center;">
+        <br />
+        You can try any Site Validator plan <strong>completely free</strong> for 14 days. No credit card required.
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="span12">
+      <h2>What our users say</h2>
+      <p>Web studios and freelance developers from all around the world use Site Validator to validate HTML and CSS markup on their sites as part of their  web development process. Our service helps them quickly identify the parts of their sites that need more attention, so they can be fixed and re-checked until they're valid.</p>
+    </div>
+  </div>
+
+  <%= partial 'testimonials' %>
+
+  <hr />
+
+  <div class="row">
+    <div class="span12">
+      <p style="text-align: center;">
+        <br />
+        <a href="https://app.sitevalidator.com/pricing" class="button large yellow">Create a free account</a>
+      </p>
+      <p style="text-align: center;">
+        <br />
+        You can try any Site Validator plan <strong>completely free</strong> for 14 days. No credit card required.
+      </p>
+    </div>
+  </div>
+
+</div>

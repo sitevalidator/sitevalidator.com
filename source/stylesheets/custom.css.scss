@@ -1,0 +1,226 @@
+
+body { font-size: 14px; color: #000;}
+.nav { font-size: 13px; }
+
+em { font-weight: bold; font-style: normal; }
+
+.badge a {
+  color: #FFF;
+}
+
+.badge.help-link {
+  background-color: #33bbee;
+}
+
+.badge-important {
+background-color:#CF1E13;
+}
+
+/* TOP MENU */
+ul.nav {
+  .signup-button {
+    background-color: #52BBEC;
+    margin-top: 2px;
+    transition: background-color 1s;
+  }
+
+  .signup-button:hover {
+    background-color: #74CCFD !important;
+    transition: background-color 1s;
+  }
+}
+
+/* FOOTER */
+footer { margin-top: 60px; }
+
+#footer p a { color: #ddd; }
+
+#footer h3 { margin-bottom:8px;}
+#footer ul { list-style:none; padding-left:0.4em; font-size:0.85em;}
+#footer ul li { margin-bottom:1px;}
+#footer ul li a { color:#fefefe;}
+
+/* GENERAL */
+.nav-tabs li.active { font-weight: bold; }
+
+/* FORMS */
+label.control-label { color: #111; }
+input[type=text], input[type=email], input[type=password] { color: #222; }
+.help-inline {
+  font-size: 0.9em;
+}
+
+.screenshot {
+  box-shadow:3px 3px 3px #ddd;
+  padding:0.5em;
+  margin:0.5em;
+  border:1px solid #ddd;
+}
+
+.percent95 {
+  width: 95%;
+}
+
+/* MODALS */
+
+.modal-big {
+    width: 700px;
+    margin-left: -350px;
+}
+
+@media (max-width: 767px) {
+    .modal-big {
+        width: auto;
+        margin-left: auto;
+    }
+}
+
+.pagination { text-align: center; }
+
+
+/* TESTIMONIALS */
+.member-testimonial .member-name{
+  padding-top: 30px;
+}
+
+.member-testimonial .member-bio{
+  font-size: 1em;
+}
+
+
+/* COOKIES
+-----------------------------------------------------------------------------*/
+
+#cookies_notice {
+  border-top: 1px dashed #FFF;
+  position: fixed; width: 90%; left: 0; bottom: 0; padding: 0.8em 5%; background: #111; background: rgba(1,1,1,0.85); color: #fff; font-size: 13px; font-weight: 700; text-shadow: 0 -1px 0 rgba(0,0,0,0.35); z-index: 99999; text-align: center;
+}
+
+/* HOME
+-----------------------------------------------------------------------------*/
+
+.signupfree {
+  text-align: center;
+
+  small {
+    font-size: 0.7em;
+    font-weight: thin;
+  }
+}
+
+.signupfree:hover {
+  color: black;
+
+  small {
+    color: #444;
+  }
+}
+
+/* UTIL */
+.tar { text-align: right }
+
+/* BLOG */
+
+.post {
+  background-color: #FFF;
+  border: 1px solid #eee;
+  border-radius: 0.6em;
+  padding: 15px;
+  margin-bottom: 25px;
+
+  ul {
+    margin-left: 50px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  .screenshot {
+    margin: 10px;
+  }
+}
+
+div#disqus_thread {
+  margin-top: 30px;
+}
+
+/* CALENDAR ICON http://www.sitepoint.com/create-calendar-icon-html5-css3/ */
+
+time.icon
+{
+  float: right;
+  font-size: 1em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  margin: 0.5em 0.65em 1em 1em;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 10%;
+  transform-origin: 50% 10%;
+}
+
+time.icon *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  border-bottom: 1px dashed #f37302;
+  box-shadow: 0 2px 0 #fd9f1b;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+
+time.icon span
+{
+  width: 100%;
+  font-size: 2.6em;
+  letter-spacing: -0.05em;
+  padding-top: 1.2em;
+  color: #2f2f2f;
+}
+
+time.icon:hover, time.icon:focus
+{
+  -webkit-animation: swing 0.6s ease-out;
+  animation: swing 0.6s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0%   { -webkit-transform: rotate(0deg)  skewY(0deg); }
+  20%  { -webkit-transform: rotate(12deg) skewY(4deg); }
+  60%  { -webkit-transform: rotate(-9deg) skewY(-3deg); }
+  80%  { -webkit-transform: rotate(6deg)  skewY(-2deg); }
+  100% { -webkit-transform: rotate(0deg)  skewY(0deg); }
+}
+
+@keyframes swing {
+  0%   { transform: rotate(0deg)  skewY(0deg); }
+  20%  { transform: rotate(12deg) skewY(4deg); }
+  60%  { transform: rotate(-9deg) skewY(-3deg); }
+  80%  { transform: rotate(6deg)  skewY(-2deg); }
+  100% { transform: rotate(0deg)  skewY(0deg); }
+}

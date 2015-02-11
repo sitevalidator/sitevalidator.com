@@ -1,0 +1,25 @@
+<% if paginate %>
+  <table style="border: 0px white; font-size: 0.9em;">
+    <tr>
+      <td style="width:33%; text-align: left;">
+        <% if prev_page %>
+          <p><%= link_to '&lt;&lt; previous page', prev_page %></p>
+        <% end %>
+      </td>
+
+      <td style="width:33%; text-align: center;">
+        <% if num_pages > 1 %>
+          <p>Page <%= page_number %> of <%= num_pages %></p>
+
+
+        <% end %>
+      </td>
+
+      <td style="width:33%; text-align: right;">
+        <% if next_page %>
+          <p><%= link_to 'next page &gt;&gt;', next_page %></p>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+<% end %>

@@ -1,0 +1,5 @@
+<time datetime="<%= article.date.strftime('%Y-%m-%d') %>" title="This article was published on <%= article.date.strftime('%B %d, %Y') %>" class="icon">
+  <em><%= article.date.strftime('%A') %></em>
+  <strong><%= article.date.strftime('%B') %></strong>
+  <span><%= article.date.strftime('%d') %></span>
+</time>

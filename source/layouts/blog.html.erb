@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
+
+<%= partial 'layouts/head' %>
+
+<body>
+  <%= partial 'layouts/header' %>
+
+  <!-- Content
+  ================================================== -->
+
+  <div id="content"<%= " class='container'" unless home_page? %>>
+    <div class="row" id="blog">
+      <!-- posts -->
+      <div class="span9" id="blog_content">
+        <% if current_article %>
+          <div class="post">
+            <%= partial 'blog/calendar_icon', locals: { article: current_article } %>
+            <%= "<h2>#{current_article.title}</h2>" %>
+
+            <%= yield %>
+
+            <%= partial 'layouts/disqus' %>
+          </div>
+        <% else %>
+          <%= yield %>
+
+          <% if paginate %>
+            <table style="border: 0px white; font-size: 0.9em;">
+              <tr>
+                <td style="width:33%; text-align: left;">
+                  <% if prev_page %>
+                    <p><%= link_to '&lt;&lt; previous page', prev_page %></p>
+                  <% end %>
+                </td>
+
+                <td style="width:33%; text-align: center;">
+                  <% if num_pages > 1 %>
+                    <p>Page <%= page_number %> of <%= num_pages %></p>
+
+
+                  <% end %>
+                </td>
+
+                <td style="width:33%; text-align: right;">
+                  <% if next_page %>
+                    <p><%= link_to 'next page &gt;&gt;', next_page %></p>
+                  <% end %>
+                </td>
+              </tr>
+            </table>
+          <% end %>
+
+        <% end %>
+      </div>
+
+      <!-- sidebar -->
+      <div class="sidebar span3">
+
+        <div class="widget">
+          <h4>Recent Articles</h4>
+          <ul class="list-style">
+            <% blog.articles[0...10].each do |article| %>
+              <li><i class="icon-chevron-right"></i> <%= link_to article.title, article %> <span><%= article.date.strftime('%b %e, %Y') %></span></li>
+            <% end %>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h4>Archives</h4>
+          <ul class="list-style">
+            <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+              <li><i class="icon-chevron-right"></i> <%= link_to "#{year}", blog_year_path(year) %></li>
+            <% end %>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h4>Categories</h4>
+          <ul class="tags">
+            <% blog.tags.each do |tag, articles| %>
+              <li><%= link_to "#{tag}", tag_path(tag) %></li>
+            <% end %>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <%= partial 'layouts/footer' %>
+
+</body>
+</html>

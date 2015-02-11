@@ -1,0 +1,101 @@
+<div id="team-members">
+  <%
+    client_testimonials = [
+                    {
+                      msg: "Site Validator has saved me at least 28 hours of work and has provided a much better look at the sites overall. Before it, I only used to validate 5 random pages by hand.",
+                      name: "Helen Burgess",
+                      position: " Chair at ",
+                      company: "Australian Web Awards",
+                      link: "http://www.webawards.com.au",
+                      avatar: "testimonials/helen-burgess-128.jpg",
+                      date: "2012-08-11",
+                      from: "Perth, Australia"
+                    },
+                    {
+                      msg: "Nowadays, the technical quality of web pages matters. Whether I have a web application or web site, with many web pages or not, Site Validator does all the heavy lifting for me.",
+                      name: "Nikos Baxevanis",
+                      position: nil,
+                      company: " Programmer",
+                      link: "http://nikosbaxevanis.com",
+                      avatar: "testimonials/nikos-baxevanis-128.jpg",
+                      date: "2012-08-26",
+                      from: "Athens, Greece"
+                    },
+                    {
+                      msg: "Validating hundreds of pages in a project can be a daunting task. Site Validator has automated the process and made it fun again and has helped improve the quality of our themes and other products significantly. Thanks for making our lives easier.",
+                      short_msg: "Validating hundreds of pages in a project can be a daunting task. Site Validator has automated the process and has helped improve the quality of our themes and other products significantly.",
+                      name: "Franklin Gitonga",
+                      position: " Founder of ",
+                      company: "Radium Themes",
+                      link: "http://radiumthemes.com",
+                      avatar: "testimonials/franklin-gitonga-128.jpg",
+                      date: "2012-08-26",
+                      from: "Nairobi, Kenya"
+                    },
+                    {
+                      msg: "Gone are the days of manually validating individual pages or relying on browser add-ons to validate the pages you view. Site Validator makes site validation quick and precise. It is well worth every penny.",
+                      name: "Salvatore Sodano",
+                      position: " CEO at ",
+                      company: "SkyToaster",
+                      link: "http://skytoaster.com",
+                      avatar: "testimonials/salvatore-sodano-128.jpg",
+                      date: "2012-08-31",
+                      from: "Florida, USA"
+                    },
+                    {
+                      msg: "ISSL has a small team of Web Designers, but we create a large number of high-quality websites. Validating each of the pages on these sites was taking up a large portion of the final stint of a project. After discovering Site Validator, it paid for itself on the first website we tested - even finding and validating automated pages we usually don't consider. Not only does Site Validator save us time and money, it helps find errors we might not have normally found.",
+                      short_msg: "After discovering Site Validator, it paid for itself on the first website we tested - even finding and validating automated pages we usually don't consider.",
+                      name: "Lewis Howles",
+                      position: " Studio Manager at ",
+                      company: "ISSL",
+                      link: "http://www.issl.co.uk",
+                      avatar: "testimonials/lewis-howles-128.jpg",
+                      date: "2014-06-13",
+                      from: "Lancashire, UK"
+                    },
+                    {
+                      msg: "One of the key factors in robust web development is markup validation. There are some tools that help you in this task, but none of them is as fast and complete as Site Validator. And my students love it!",
+                      name: "Luis Herrero",
+                      position: nil,
+                      company: "Freelance front-end developer",
+                      link: "http://www.luisherrero.es/",
+                      avatar: "testimonials/luis-herrero-128.jpg",
+                      date: "2012-09-05",
+                      from: "Madrid, Spain"
+                    },
+                    {
+                      msg: "Site Validator made an easier task to validate a whole site, they are open to suggestions and are developing a very helpful tool. We will be using this site for all our validation needs, GREAT JOB!",
+                      name: "Robert Noon",
+                      position: " Director at ",
+                      company: "All Advertising",
+                      link: "http://www.alladvertising.co.uk/",
+                      avatar: "testimonials/robert-noon-128.jpg",
+                      date: "2012-09-07",
+                      from: "Essex, UK"
+                    },
+                    {
+                      msg: "I work on the programming department at a SEO consulting team, and we're really happy with Site Validator. The tasks of validating and adapting each project we design and build are a lot more organized thanks to this tool. Online support is flexible and comfortable. We keep trusting W3C markup validation to Site Validator.",
+                      name: "Enrique Sánchez",
+                      position: " SEO Consultant at ",
+                      company: "Ágora Servicios Web",
+                      link: "http://posicionamientoweb-seo.net/",
+                      avatar: "testimonials/enrique-sanchez-128.jpg",
+                      date: "2015-01-28",
+                      from: "Valencia, Spain"
+                    }
+                   ]
+  %>
+
+  <% client_testimonials.shuffle.each do |t| %>
+    <article class="member member-testimonial">
+  		<h3 class="member-name"><%= link_to t[:name], t[:link] %></h3>
+  		<h4 class="member-position"><%= t[:position] %> <%= t[:company] %>. <%= t[:from] %></h4>
+  		<p class="member-bio">
+  		  <%= t[:msg].html_safe %>
+  		</p>
+  		<div class="member-avatar">
+  		  <a href="<%= t[:link] %>"><%= image_tag t[:avatar], :alt => t[:name] %></a>
+  		</div>
+  	</article>
+  <% end %>
+</div>

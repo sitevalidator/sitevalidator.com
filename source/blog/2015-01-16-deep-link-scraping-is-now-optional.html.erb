@@ -1,0 +1,13 @@
+---
+title: Deep link scraping is now optional
+tags: improvements, scraping
+layout: blog
+---
+
+<p>When you submit a site URL for validation in Site Validator, our link spider visits it and enqueues it and its directly linked pages for validation.</p>
+<p>Ideally, you should submit an XML sitemap containing the exact URLs that you want us to validate, but most developers prefer to submit just the main URL of the site, and let us discover the pages of the site by following internal links.</p>
+<p>That's what we call <em>deep link scraping</em>.</p>
+<p>Until now, we've done this automatically for you, but there are some cases where it would be convenient to disable deep link scraping.</p>
+<p>The main case where you'd like to disable this feature is when you're submitting an XML sitemap to speficy exactly which URLs you want us to validate, so you don't want us to follow any link to add more pages. By disabling this, we'll just validate exactly what you tell us to validate.</p>
+<p>For the rest of the cases, it's convenient to leave this option enabled; for example, you might be surprised to see that our link spider has found (and validated) pages you had forgotten long time ago, and it might help to find broken URLs in your site.</p>
+<%= image_tag 'http://sitevalidator.com/images/site_validator_deep_link_scraping_option.png', alt: 'Screenshot of the Deep Link Scraping option', class: 'screenshot percent95' %>

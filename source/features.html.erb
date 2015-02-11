@@ -1,0 +1,54 @@
+---
+title: Features
+---
+
+<div class="hero-unit">
+  <h1>List of Features</h1>
+  <p>List of available features on Site Validator</p>
+  <hr />
+</div>
+
+<h3 id="html5_validation">&#10004; HTML5 Validation</h3>
+<p>
+  Site Validator complies with the validation done by the official <a href="http://validator.w3.org/">W3C Validator</a>, and that includes validating HTML5 markup on your sites. To accomplish this, it uses the <a href="http://validator.nu/">Validator.nu</a> web service.
+</p>
+
+<br />
+<h3 id="css3_validation">&#10004; CSS3 Validation</h3>
+<p>
+  Site Validator validates CSS styles on your sites, checking your stylesheets and inline styles, just like the <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validator</a>.
+</p>
+
+<br />
+<h3 id="continuous_validation">&#10004; Continuous Validation</h3>
+<p>
+  Site Validator easily integrates with modern hosting platforms like <a href="http://docs.sitevalidator.com/continuous-validation/#example-netlify">Netlify</a>, <a href="http://docs.sitevalidator.com/continuous-validation/#example-heroku">Heroku</a> or <a href="http://docs.sitevalidator.com/continuous-validation/#example-cloud-66">Cloud 66</a> via webhooks, so you can set up automatic validations on your sites after a new version is deployed.
+</p>
+
+<br />
+<h3 id="deep_link_crawling">&#10004; Deep Link Crawling</h3>
+<p>
+  Site Validator will crawl your submitted sites in search for pages to validate. Starting with the submitted URL, it will collect the internal links and then it wil visit those links in search for more internal links. This way, we can get thousands of pages from your sites in minutes.
+</p>
+
+<br />
+<h3 id="xml_sitemap_parsing">&#10004; XML Sitemap Parsing</h3>
+<p>
+  If you prefer a greater control over the exact URLs that you want to validate on your site, you can submit an XML sitemap instead of your home page URL. Here is a <a href="http://www.sitemaps.org/protocol.html">reference of the syntax expected on an XML sitemap</a>, and here is an <a href="http://www.xml-sitemaps.com/">XML Sitemaps Generator</a>.
+</p>
+
+<br />
+<h3 id="summary_report">&#10004; Summary Report</h3>
+<p>
+  Site Validator will validate thousands of pages from your submitted site, and will give you back a nicely formatted report of all the common errors and warnings found. Here is <a href="http://sitevalidator.com/s/cbf35b792a90aa46958f83ca015a08cbe5f72ae9/report/html">an example of an HTML summary report</a>, and <a href="http://sitevalidator.com/s/cbf35b792a90aa46958f83ca015a08cbe5f72ae9/report/css">an example of an CSS summary report</a>. You can see the count of errors and warnings, and click on them to see the exact URLs where they occur.
+</p>
+
+<br />
+<h3 id="per_url_report">&#10004; Per-URL Report</h3>
+<p>
+  You also get a specific, per-URL report where you can see the errors and warnings for each individual page. You can also see the full W3C report for each URL, and re-check individual pages from there. Here is an example of <a href="http://sitevalidator.com/s/cbf35b792a90aa46958f83ca015a08cbe5f72ae9">an example of a per-URL report</a>
+</p>
+
+<br />
+<h3 id="speed">&#10004; Speed</h3>
+<p>At Site Validator, we also believe that <a href="http://37signals.com/svn/posts/2280-speed-is-the-most-important-feature-if-your">speed is a feature</a>. When you submit a site for validation, you'll typically get the full validation report in minutes, not hours or days. <strong>The average validation time for a 250 pages site is under 5 minutes</strong>. When you re-check individual web pages, you get the results <strong>in seconds</strong>. And you can submit multiple sites in parallel, it will get handled by our elastic background queue which will scale the number of workers automatically.</p>
