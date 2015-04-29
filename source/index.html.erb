@@ -4,43 +4,63 @@ title: Site Validator
 ---
 
 <div class="lead-container">
-  <div class="container">
-    <!-- Macbook carousel -->
-    <div id="carousel" class="carousel slide macbook">
-      <%= image_tag 'template/carousel-macbook.png', :class => "carousel-macbook", :alt => "" %>
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-          <div class="item active">
-            <a href="//fast.wistia.net/embed/iframe/tsnw0okrs0?popover=true" class="wistia-popover[height=433,playerColor=7b796a,width=720]"><%= image_tag "video_home.jpg", alt: "Site Validator demo video" %></a>
-          </div>
-      </div>
-    </div>
-    <!-- end Macbook carousel -->
-  </div>
-</div> 
 
-<div class="container">
-  <div class="row">
-    <div class="span8">
-      <h1 class="lead">
-        <strong>Site-wide HTML, CSS &amp; Accessibility validation</strong>
-        <br />
-        Continuous validation for large sites with just one click.
-      </h1>
+  <div class="container">
+    <div id="intro_video" class="span8 zero">
+      <a href="//fast.wistia.net/embed/iframe/tsnw0okrs0?popover=true" class="wistia-popover[height=433,playerColor=7b796a,width=720]"><%= image_tag "sitevalidator-intro.gif", alt: "Site Validator demo video" %></a>
+
+      <div class="intro-titlebar">
+				<h1>HTML, CSS &amp; Accessibility</h1>
+				<h2 class="lema">Site-wide <strong>validation</strong></h2>
+			</div>
     </div>
-    <div class="span4">
-      <%= link_to "14-day free trial".html_safe, "https://app.sitevalidator.com/pricing", class: "button large yellow signupfree" %>
-    </div>
+
+		<div id="intro_form" class="span4">
+			<div class="row form_signup">
+				<h2><strong>Try</strong> Site Validator <strong>free</strong> for 14 days</h2>
+
+				<form accept-charset="UTF-8" action="https://app.sitevalidator.com/users" method="post">
+					<div>
+						<input id="user_name" type="text" required="true" name="user[name]" placeholder="Your full name">
+					</div>
+
+					<div>
+						<input id="user_email" type="email" required="true" name="user[email]" placeholder="Your email">
+					</div>
+
+					<div>
+						<input id="user_password" type="password" required="true" name="user[password]" placeholder="Password">
+					</div>
+
+					<div>
+						<select id="user_desired_subscription" name="user[desired_subscription]">
+              <option value="2">Freelancer - $19 per month</option>
+              <option value="3">Studio - $49 per month</option>
+              <option value="4">Enterprise - $99 per month</option>
+              <option value="6">Freelancer Yearly - $190 per year</option>
+              <option value="7">Studio Yearly - $490 per year</option>
+              <option value="8">Enterprise Yearly - $990 per year</option></select>
+					</div>
+
+					<div>
+						<input class="button large yellow signupfree" type="submit" value="Start NOW your free trial" id="submit">
+					</div>
+				</form>
+
+        <div id="form_info_text">
+          By signing up you agree to the <br><a href="https://app.sitevalidator.com/terms_of_service" target="_blank">Terms of Service.</a>
+        </div>
+
+			</div>
+		</div>
   </div>
 </div>
 
-<hr />
 
 <div class="container">
   <div class="row">
     <div class="span12">
-      <h2>HTML, CSS and Accessibility validation for large sites</h2>
-      <p>Using our service you can <strong>validate HTML, CSS and Accessibility on thousands of pages</strong> from your sites, <strong><a href="http://docs.sitevalidator.com/site-wide-validation" target="_blank">with just one click</a></strong>. Just give us a starting URL and we'll visit it to discover its internal pages, validate each of them <strong>using validation software from W3C, Google and Tenon</strong>, and produce a summary and detailed report in minutes. Then, you can fix your errors and re-check as needed.</p>
+      <p>Using our service you can <strong>validate HTML, CSS and Accessibility on thousands of pages</strong> from your sites, <strong><a href="http://docs.sitevalidator.com/site-wide-validation" target="_blank">with just one click</a></strong>. Just give us a starting URL and we'll visit it to discover its internal pages, validate each of them <strong>using validation from the W3C, Google and Tenon</strong>, and produce a summary and detailed report in minutes. Then, you can fix your errors and re-check as needed.</p>
       <p style="text-align: center;">
         <br />
         <a href="https://app.sitevalidator.com/s/3c085843df0ee18f78003d1d" target="_blank" title="Click to see a sample report"><%= image_tag 'sample_report.jpg', alt: 'Sample report', class: 'screenshot' %></a>
@@ -52,10 +72,9 @@ title: Site Validator
 
   <div class="row">
     <div class="span12">
-      <h2>Continuous Validation</h2>
+      <h2><strong>Continuous</strong> Validation</h2>
 
       <p>Site Validator lets you easily <strong>schedule HTML, CSS and Accessibility validations</strong> to be run on your sites periodically, on a daily, weekly or monthly basis.</p>
-      <p>Your sites will be validated using validation software from W3C, Google and Tenon, and results will be sent to you by email.</p>
 
       <div style="text-align: center; margin-bottom: 30px;">
         <img src="/images/site_validator_scheduled_weekly.png" class="screenshot" alt="Scheduled validation screenshot" />
@@ -116,7 +135,7 @@ title: Site Validator
   <div class="row">
     <div class="span12">
       <h2>What our users say</h2>
-      <p>Web studios and freelance developers from all around the world use Site Validator to validate HTML and CSS markup on their sites as part of their  web development process. Our service helps them quickly identify the parts of their sites that need more attention, so they can be fixed and re-checked until they're valid.</p>
+      <p>Web studios and freelance developers from all around the world use Site Validator to validate HTML, CSS and Accessibility on their sites as part of their  web development process. Our service helps them quickly identify the parts of their sites that need more attention, so they can be fixed and re-checked until they're valid.</p>
     </div>
   </div>
 
