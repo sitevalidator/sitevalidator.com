@@ -35,11 +35,10 @@
 
           <div class="newsletter">
             <h3>Newsletter</h3>
-            <p>Be the first to know about our news and special deals!</p>
+            <p>Get our curated newsletter about HTML / CSS / A11Y validation</p>
             <%= image_tag 'template/ajax-loader.gif', :class => 'ajax-loader', :alt => "" %>
-            <form action="https://w3clove.us4.list-manage.com/subscribe/post?u=6af3ab69c286561d0f0f25671&amp;id=04a0dab609" method="post" id="newsletter-form">
-              <input type="email" value="your email" name="EMAIL" id="mce-EMAIL" placeholder="your email" onfocus="this.value='';" required>
-              <input type="hidden" name="bot" /><!-- SPAM protection -->
+            <form action="https://www.getrevue.co/profile/sitevalidator/add_subscriber" method="post" id="newsletter-form">
+              <input type="email" value="your email" name="member[email]" id="member_email" placeholder="your email" onfocus="this.value='';" required>
               <button type="submit" class="icon-ok" id="newsletter-subscribe" ></button>
             </form>
           </div>
