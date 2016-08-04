@@ -1,0 +1,29 @@
+---
+title: Introducing Rocket Validator
+tags: improvements, html validation
+layout: blog
+---
+<p><i><strong>TL;DR:</strong> we've just launched a new version of our HTML validator, called <strong><a href="https://rocketvalidator.com">Rocket Validator</a></strong>, it's blazing fast, has cheaper subscription plans, and there's no limit on the number of pages you can validate.</i></p>
+
+<hr />
+
+<p>Site Validator has grown fast over these last years, from a quick open source script to a full-fledged application used by web developers worldwide to check the markup of their sites.</p>
+<p>Over these years, we've been adding (and sometimes removing) features to the app. Site Validator lets you now validate HTML, CSS and Accessibility on large sites, and as well trigger those validations via deploy hooks or programmed jobs.</p>
+<p>Still, we felt that all these extra features were, maybe, too distracting. In practice, 95% of our users only validate HTML on their sites, but they:</p>
+<ul>
+  <li><strong>Don't validate CSS</strong>. Because, CSS should be centralized in stylesheets, which are common to the whole site, so you shouldn't worry about validating CSS on thousands of pages from the same site.</li>
+  <li><strong>Don't validate Accessibility.</strong> A11Y validation is a very important step in web development, but in practice most of our users haven't activated our Tenon integration, in part because that's extra work, in part because you need another paid account with them. In any case, as Tenon is getting ready to have their own site spider, our integration will no longer be needed to validate A11Y on large sites.</li>
+  <li><strong>Don't set up Continuous Validation.</strong> This power feature lets you validate your sites after each deploy, or automate validations to happen periodically. But in practice, we've seen that the validation flow most of our users follow is validating the sites while developing them, and once everything is ready, deploy and forget - or validate manually from time to time when there are updates.</li>
+</ul>
+
+<p>So, we decided to go back to our roots and focus on our most important feature: site-wide HTML validation. And always, keeping things as simple as possible.</p>
+
+<p>The result of this decision is our brand new <strong><a href="https://rocketvalidator.com">Rocket Validator</a></strong>, a separate project made by the Site Validator team, that lets you validate HTML on large sites <strong>without setting a limit on the number of validations</strong>, and at the fastest speed.</p>
+
+<a href="https://rocketvalidator.com"><%= image_tag "rocket-validation-hell-100-blog.gif", class: "screenshot" %></a>
+
+<p><br />We also understood that our subscription plans were not optimized for many users that just needed to validate sites from time to time. Thinking on them, we've included <strong><a href="https://rocketvalidator.com/pricing">weekly plans</a></strong> - ideal when you need only validate a site for the last days before a deploy. </p>
+
+<p>Rocket Validator is open for everyone at affordable prices, starting <a href="https://rocketvalidator.com/pricing">as low as $6/week</a>. Current Site Validator users can try it out at no cost, and switch to the new plans at any time.</p>
+
+<p>Welcome to <strong><a href="https://rocketvalidator.com">Rocket Validator</a></strong>, we hope to see you on board soon!</p>
